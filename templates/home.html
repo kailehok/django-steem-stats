@@ -1,0 +1,8 @@
+# templates/home.html
+
+<h1>Blog posts</h1>
+    <ul>
+        {% for post in all_posts_list %}
+            <li><a href="https://www.steemit.com/{{ post.authorperm }}">{{ post.title }}</a></li>
+        {% endfor %}
+    </ul>
